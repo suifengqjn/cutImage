@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW3-eC-uHF">
+                                <rect key="frame" x="106" y="84" width="76" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="butt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZD-hk-1qb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-jU-Awg">
+                                <rect key="frame" x="0.0" y="147" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9ti-FC-QL7"/>
+                                    <constraint firstAttribute="height" constant="200" id="KSG-Xw-IOR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KSG-Xw-IOR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uW3-eC-uHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="106" id="87O-mP-lSJ"/>
+                            <constraint firstItem="aA8-jU-Awg" firstAttribute="top" secondItem="uW3-eC-uHF" secondAttribute="bottom" constant="33" id="Egf-RE-doZ"/>
+                            <constraint firstItem="aA8-jU-Awg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HCG-rl-5JM"/>
+                            <constraint firstItem="aA8-jU-Awg" firstAttribute="top" secondItem="uW3-eC-uHF" secondAttribute="bottom" constant="38" id="MRT-K8-Okd"/>
+                            <constraint firstItem="uW3-eC-uHF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="O38-vd-bvu"/>
+                            <constraint firstAttribute="trailing" secondItem="uW3-eC-uHF" secondAttribute="trailing" constant="138" id="T8c-kh-ar0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aA8-jU-Awg" secondAttribute="trailing" id="XDd-I7-xbR"/>
+                            <constraint firstAttribute="trailing" secondItem="aA8-jU-Awg" secondAttribute="trailing" id="j5s-9g-SOJ"/>
+                            <constraint firstItem="aA8-jU-Awg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o1X-IB-tMc"/>
+                            <constraint firstItem="aA8-jU-Awg" firstAttribute="top" secondItem="uW3-eC-uHF" secondAttribute="bottom" constant="57" id="uM2-3e-UJK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HCG-rl-5JM"/>
+                                <exclude reference="MRT-K8-Okd"/>
+                                <exclude reference="XDd-I7-xbR"/>
+                                <exclude reference="uM2-3e-UJK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="aA8-jU-Awg" id="M2e-Fy-gb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="339"/>
+        </scene>
+    </scenes>
+</document>
