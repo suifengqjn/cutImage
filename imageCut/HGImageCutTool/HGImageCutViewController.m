@@ -42,14 +42,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.imageView = [[HGImageScrollowView alloc] initWithImage:_image];
     
     [self.view addSubview:self.imageView];
     self.cutView = [[HGCutView alloc] init];
     
     [self.view addSubview:_cutView];
-    
     
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];

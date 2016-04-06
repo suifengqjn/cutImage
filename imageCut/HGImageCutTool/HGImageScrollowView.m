@@ -21,11 +21,14 @@
     self = [super initWithFrame:[UIScreen mainScreen].bounds];
     if (self) {
         
-        self.imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        CGFloat height = width * image.size.height / image.size.width;
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
         
         self.imageView.image = image;
         self.delegate = self;
         
+        self.imageView.center = self.center;
         [self addSubview:_imageView];
         
         self.minimumZoomScale = 1;
@@ -33,6 +36,8 @@
         //设置最大缩放比例
         self.maximumZoomScale = 3;
         //[self cutImageView];
+        
+        self.backgroundColor = [UIColor whiteColor];
         
     }
     return self;

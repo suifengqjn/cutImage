@@ -22,7 +22,7 @@
 }
 - (IBAction)butt:(id)sender {
     
-    UIImage *image  = [UIImage imageNamed:@"12"];
+    UIImage *image  = [UIImage imageNamed:@"23"];
     HGImageCutViewController *imageVC = [[HGImageCutViewController alloc] initWithImage:image];
     imageVC.delegate = self;
     [self presentViewController:imageVC animated:YES completion:nil];

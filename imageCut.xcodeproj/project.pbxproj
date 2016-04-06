@@ -16,7 +16,7 @@
 		C2A22A451CABD14100EE739C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A22A431CABD14100EE739C /* LaunchScreen.storyboard */; };
 		C2A22A511CABD17B00EE739C /* HGImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A22A4E1CABD17B00EE739C /* HGImageCutViewController.m */; };
 		C2A22A521CABD17B00EE739C /* HGImageScrollowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A22A501CABD17B00EE739C /* HGImageScrollowView.m */; };
-		C2A22A561CABD46200EE739C /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A22A551CABD46200EE739C /* 12.png */; };
+		C2B40FB01CB4AD9900625904 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B40FAF1CB4AD9900625904 /* 23.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		C2A22A4E1CABD17B00EE739C /* HGImageCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGImageCutViewController.m; sourceTree = "<group>"; };
 		C2A22A4F1CABD17B00EE739C /* HGImageScrollowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGImageScrollowView.h; sourceTree = "<group>"; };
 		C2A22A501CABD17B00EE739C /* HGImageScrollowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGImageScrollowView.m; sourceTree = "<group>"; };
-		C2A22A551CABD46200EE739C /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		C2B40FAF1CB4AD9900625904 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				C2A22A391CABD14100EE739C /* AppDelegate.m */,
 				C2A22A3B1CABD14100EE739C /* ViewController.h */,
 				C2A22A3C1CABD14100EE739C /* ViewController.m */,
-				C2A22A551CABD46200EE739C /* 12.png */,
+				C2B40FAF1CB4AD9900625904 /* 23.png */,
 				C2A22A4C1CABD17B00EE739C /* HGImageCutTool */,
 				C2A22A3E1CABD14100EE739C /* Main.storyboard */,
 				C2A22A411CABD14100EE739C /* Assets.xcassets */,
@@ -162,7 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2A22A561CABD46200EE739C /* 12.png in Resources */,
+				C2B40FB01CB4AD9900625904 /* 23.png in Resources */,
 				C2A22A451CABD14100EE739C /* LaunchScreen.storyboard in Resources */,
 				C2A22A421CABD14100EE739C /* Assets.xcassets in Resources */,
 				C2A22A401CABD14100EE739C /* Main.storyboard in Resources */,
