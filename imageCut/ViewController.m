@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "HGImageCutViewController.h"
-
-@interface ViewController ()<HGImageCutViewControllerDelegate>
+#import "BZImageViewController.h"
+@interface ViewController ()<HGImageCutViewControllerDelegate,BZImageCutViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
@@ -23,9 +23,12 @@
 - (IBAction)butt:(id)sender {
     
     UIImage *image  = [UIImage imageNamed:@"23"];
-    HGImageCutViewController *imageVC = [[HGImageCutViewController alloc] initWithImage:image];
+    BZImageViewController *imageVC = [[BZImageViewController alloc] initWithImage:image];
     imageVC.delegate = self;
-    [self presentViewController:imageVC animated:YES completion:nil];
+    [self.navigationController pushViewController:imageVC animated:YES];
+    
+    
+    
 }
 
 - (void)cutImage:(UIImage *)image

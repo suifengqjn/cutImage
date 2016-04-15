@@ -7,8 +7,9 @@
 //
 
 #import "HGImageScrollowView.h"
-
 #import "HGCutView.h"
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 @interface HGImageScrollowView () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIView *cutView;
@@ -21,9 +22,16 @@
     self = [super initWithFrame:[UIScreen mainScreen].bounds];
     if (self) {
         
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        CGFloat width = kScreenWidth;
         CGFloat height = width * image.size.height / image.size.width;
-        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+        CGRect imageViewframe ;
+        if (height < kScreenHeight - 64) {
+            imageViewframe = CGRectMake(0, (self.frame.size.height - height)/2, width, height);
+        } else {
+            imageViewframe = CGRectMake(0, 0, width, height);
+        }
+    
+        self.imageView = [[UIImageView alloc] initWithFrame:imageViewframe];
         
         self.imageView.image = image;
         self.delegate = self;
@@ -51,35 +59,4 @@
 
 
 
-//- (void)cutImageView
-//{
-//    self.cutView = [[UIView alloc] init];
-//    self.cutView.frame = CGRectMake(0, (kScreenHeight - 200)/2, kScreenWidth-2, 200);
-//    _cutView.layer.borderColor = [UIColor redColor].CGColor;
-//    _cutView.layer.borderWidth = 1.0;
-//    _cutView.backgroundColor = [UIColor grayColor];
-//    _cutView.alpha = 0.2;
-//    
-//    [self addSubview:_cutView];
-//    
-//    
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panClick:)];
-//    [self.cutView addGestureRecognizer:pan];
-//    
-//}
-//
-//- (void)panClick:(UIPanGestureRecognizer *)recognizer
-//{
-//    CGPoint translatedPoint = [recognizer translationInView:self.cutView];
-//    NSLog(@"gesture translatedPoint  is %@", NSStringFromCGPoint(translatedPoint));
-//    //CGFloat x = recognizer.view.center.x + translatedPoint.x;
-//    CGFloat y = recognizer.view.center.y + translatedPoint.y;
-//    y = translatedPoint.y;
-//    if (y > 0 && y < kScreenHeight - 200) {
-//        self.cutView.frame = CGRectMake(0, y, kScreenWidth-2, 200);
-//    }
-//    
-//    
-//    //NSLog(@"---%f----%f", x,y);
-//}
 @end
