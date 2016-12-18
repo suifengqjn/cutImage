@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2C0C6B1E06B0C90035273A /* FMImageCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C0C681E06B0C90035273A /* FMImageCutController.m */; };
+		1D2C0C6C1E06B0C90035273A /* FMImageCutScrollow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C0C6A1E06B0C90035273A /* FMImageCutScrollow.m */; };
 		C2271C2E1CACC22100BC4D90 /* HGCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2271C2D1CACC22100BC4D90 /* HGCutView.m */; };
 		C288A64F1CC0A86C00BC7B0C /* BZCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A64E1CC0A86C00BC7B0C /* BZCutView.m */; };
 		C288A6521CC0A8C000BC7B0C /* BZImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A6511CC0A8C000BC7B0C /* BZImageViewController.m */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2C0C671E06B0C90035273A /* FMImageCutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMImageCutController.h; sourceTree = "<group>"; };
+		1D2C0C681E06B0C90035273A /* FMImageCutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMImageCutController.m; sourceTree = "<group>"; };
+		1D2C0C691E06B0C90035273A /* FMImageCutScrollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMImageCutScrollow.h; sourceTree = "<group>"; };
+		1D2C0C6A1E06B0C90035273A /* FMImageCutScrollow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMImageCutScrollow.m; sourceTree = "<group>"; };
 		C2271C2C1CACC22100BC4D90 /* HGCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCutView.h; sourceTree = "<group>"; };
 		C2271C2D1CACC22100BC4D90 /* HGCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCutView.m; sourceTree = "<group>"; };
 		C288A64D1CC0A86C00BC7B0C /* BZCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZCutView.h; sourceTree = "<group>"; };
@@ -59,6 +65,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2C0C661E06B0C90035273A /* FMImageCut */ = {
+			isa = PBXGroup;
+			children = (
+				1D2C0C671E06B0C90035273A /* FMImageCutController.h */,
+				1D2C0C681E06B0C90035273A /* FMImageCutController.m */,
+				1D2C0C691E06B0C90035273A /* FMImageCutScrollow.h */,
+				1D2C0C6A1E06B0C90035273A /* FMImageCutScrollow.m */,
+			);
+			path = FMImageCut;
+			sourceTree = "<group>";
+		};
 		C288A6431CC0A78F00BC7B0C /* HGimageTool2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +113,7 @@
 				C2A22A3B1CABD14100EE739C /* ViewController.h */,
 				C2A22A3C1CABD14100EE739C /* ViewController.m */,
 				C2B40FAF1CB4AD9900625904 /* 23.png */,
+				1D2C0C661E06B0C90035273A /* FMImageCut */,
 				C288A6431CC0A78F00BC7B0C /* HGimageTool2 */,
 				C2A22A4C1CABD17B00EE739C /* HGImageCutTool */,
 				C2A22A3E1CABD14100EE739C /* Main.storyboard */,
@@ -200,12 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2271C2E1CACC22100BC4D90 /* HGCutView.m in Sources */,
+				1D2C0C6B1E06B0C90035273A /* FMImageCutController.m in Sources */,
 				C2A22A3D1CABD14100EE739C /* ViewController.m in Sources */,
 				C288A6551CC0A93F00BC7B0C /* BZImageScrollow.m in Sources */,
 				C2A22A3A1CABD14100EE739C /* AppDelegate.m in Sources */,
 				C288A6521CC0A8C000BC7B0C /* BZImageViewController.m in Sources */,
 				C288A64F1CC0A86C00BC7B0C /* BZCutView.m in Sources */,
 				C2A22A511CABD17B00EE739C /* HGImageCutViewController.m in Sources */,
+				1D2C0C6C1E06B0C90035273A /* FMImageCutScrollow.m in Sources */,
 				C2A22A371CABD14100EE739C /* main.m in Sources */,
 				C2A22A521CABD17B00EE739C /* HGImageScrollowView.m in Sources */,
 			);

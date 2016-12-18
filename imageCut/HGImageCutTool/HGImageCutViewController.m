@@ -42,7 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.imageView = [[HGImageScrollowView alloc] initWithImage:_image];
     
     [self.view addSubview:self.imageView];

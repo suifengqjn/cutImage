@@ -103,7 +103,8 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(cutImage:)]) {
         [self.delegate cutImage:cutImage];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+   // [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
