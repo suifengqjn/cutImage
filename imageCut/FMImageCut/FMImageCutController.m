@@ -48,9 +48,16 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"save" style:UIBarButtonItemStyleDone target:self action:@selector(ButtonClick)];
 
 }
 
+- (void)ButtonClick
+{
+    UIImage *image = [self cutImage];
+    NSLog(@"%@", image);
+}
 - (void)forbidNav
 {
     

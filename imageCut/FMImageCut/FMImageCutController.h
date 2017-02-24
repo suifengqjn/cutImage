@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-
+//这个剪切实际是在屏幕上截图，剪切的图片都与屏等宽
 @interface FMImageCutController : UIViewController
 
 -(instancetype)initWithImage:(UIImage *)image;

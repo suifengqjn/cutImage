@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D2C0C6B1E06B0C90035273A /* FMImageCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C0C681E06B0C90035273A /* FMImageCutController.m */; };
 		1D2C0C6C1E06B0C90035273A /* FMImageCutScrollow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C0C6A1E06B0C90035273A /* FMImageCutScrollow.m */; };
+		1D8206CF1E6018D30052A19F /* XCImageCutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8206CE1E6018D30052A19F /* XCImageCutController.m */; };
+		1D8206D21E60197B0052A19F /* XCImageCutScrollow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8206D11E60197B0052A19F /* XCImageCutScrollow.m */; };
+		1D8206D51E601AF60052A19F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8206D41E601AF60052A19F /* UIColor+Hex.m */; };
 		C2271C2E1CACC22100BC4D90 /* HGCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2271C2D1CACC22100BC4D90 /* HGCutView.m */; };
 		C288A64F1CC0A86C00BC7B0C /* BZCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A64E1CC0A86C00BC7B0C /* BZCutView.m */; };
 		C288A6521CC0A8C000BC7B0C /* BZImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A6511CC0A8C000BC7B0C /* BZImageViewController.m */; };
@@ -29,6 +32,12 @@
 		1D2C0C681E06B0C90035273A /* FMImageCutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMImageCutController.m; sourceTree = "<group>"; };
 		1D2C0C691E06B0C90035273A /* FMImageCutScrollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMImageCutScrollow.h; sourceTree = "<group>"; };
 		1D2C0C6A1E06B0C90035273A /* FMImageCutScrollow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMImageCutScrollow.m; sourceTree = "<group>"; };
+		1D8206CD1E6018D30052A19F /* XCImageCutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCImageCutController.h; sourceTree = "<group>"; };
+		1D8206CE1E6018D30052A19F /* XCImageCutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCImageCutController.m; sourceTree = "<group>"; };
+		1D8206D01E60197B0052A19F /* XCImageCutScrollow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCImageCutScrollow.h; sourceTree = "<group>"; };
+		1D8206D11E60197B0052A19F /* XCImageCutScrollow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCImageCutScrollow.m; sourceTree = "<group>"; };
+		1D8206D31E601AF60052A19F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		1D8206D41E601AF60052A19F /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		C2271C2C1CACC22100BC4D90 /* HGCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCutView.h; sourceTree = "<group>"; };
 		C2271C2D1CACC22100BC4D90 /* HGCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCutView.m; sourceTree = "<group>"; };
 		C288A64D1CC0A86C00BC7B0C /* BZCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZCutView.h; sourceTree = "<group>"; };
@@ -76,6 +85,19 @@
 			path = FMImageCut;
 			sourceTree = "<group>";
 		};
+		1D8206CC1E6018B80052A19F /* XCImageCut */ = {
+			isa = PBXGroup;
+			children = (
+				1D8206D31E601AF60052A19F /* UIColor+Hex.h */,
+				1D8206D41E601AF60052A19F /* UIColor+Hex.m */,
+				1D8206CD1E6018D30052A19F /* XCImageCutController.h */,
+				1D8206CE1E6018D30052A19F /* XCImageCutController.m */,
+				1D8206D01E60197B0052A19F /* XCImageCutScrollow.h */,
+				1D8206D11E60197B0052A19F /* XCImageCutScrollow.m */,
+			);
+			path = XCImageCut;
+			sourceTree = "<group>";
+		};
 		C288A6431CC0A78F00BC7B0C /* HGimageTool2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 				C2A22A3B1CABD14100EE739C /* ViewController.h */,
 				C2A22A3C1CABD14100EE739C /* ViewController.m */,
 				C2B40FAF1CB4AD9900625904 /* 23.png */,
+				1D8206CC1E6018B80052A19F /* XCImageCut */,
 				1D2C0C661E06B0C90035273A /* FMImageCut */,
 				C288A6431CC0A78F00BC7B0C /* HGimageTool2 */,
 				C2A22A4C1CABD17B00EE739C /* HGImageCutTool */,
@@ -220,12 +243,15 @@
 				C2271C2E1CACC22100BC4D90 /* HGCutView.m in Sources */,
 				1D2C0C6B1E06B0C90035273A /* FMImageCutController.m in Sources */,
 				C2A22A3D1CABD14100EE739C /* ViewController.m in Sources */,
+				1D8206CF1E6018D30052A19F /* XCImageCutController.m in Sources */,
+				1D8206D21E60197B0052A19F /* XCImageCutScrollow.m in Sources */,
 				C288A6551CC0A93F00BC7B0C /* BZImageScrollow.m in Sources */,
 				C2A22A3A1CABD14100EE739C /* AppDelegate.m in Sources */,
 				C288A6521CC0A8C000BC7B0C /* BZImageViewController.m in Sources */,
 				C288A64F1CC0A86C00BC7B0C /* BZCutView.m in Sources */,
 				C2A22A511CABD17B00EE739C /* HGImageCutViewController.m in Sources */,
 				1D2C0C6C1E06B0C90035273A /* FMImageCutScrollow.m in Sources */,
+				1D8206D51E601AF60052A19F /* UIColor+Hex.m in Sources */,
 				C2A22A371CABD14100EE739C /* main.m in Sources */,
 				C2A22A521CABD17B00EE739C /* HGImageScrollowView.m in Sources */,
 			);

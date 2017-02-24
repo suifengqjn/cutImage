@@ -51,12 +51,14 @@
     [self.view addSubview:_cutView];
     
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(kScreenWidth - 100, 40, 100, 50);
-    [button setTitle:@"保存" forState:UIControlStateNormal];
-    button.titleLabel.textColor = [UIColor redColor];
-    [button addTarget:self action:@selector(ButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    button.frame = CGRectMake(kScreenWidth - 100, 40, 100, 50);
+//    [button setTitle:@"保存" forState:UIControlStateNormal];
+//    button.titleLabel.textColor = [UIColor redColor];
+//    [button addTarget:self action:@selector(ButtonClick) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"save" style:UIBarButtonItemStyleDone target:self action:@selector(ButtonClick)];
     
 }
 

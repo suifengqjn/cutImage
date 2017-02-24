@@ -10,7 +10,7 @@
 #import "HGImageCutViewController.h"
 #import "BZImageViewController.h"
 #import "FMImageCutController.h"
-
+#import "XCImageCutController.h"
 @interface ViewController ()<HGImageCutViewControllerDelegate,BZImageCutViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -45,9 +45,16 @@
     FMImageCutController *imageVC = [[FMImageCutController alloc] initWithImage:image];
     //imageVC.delegate = self;
     [self.navigationController pushViewController:imageVC animated:YES];
+    
 }
 
 
+- (IBAction)btn4:(id)sender {
+    
+    XCImageCutController *iamgeVC = [[XCImageCutController alloc] init];
+    iamgeVC.currentImage = [UIImage imageNamed:@"23"];
+    [self.navigationController pushViewController:iamgeVC animated:YES];
+}
 
 - (void)cutImage:(UIImage *)image
 {
