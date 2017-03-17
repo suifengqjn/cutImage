@@ -53,6 +53,7 @@
 
 }
 
+
 - (void)ButtonClick
 {
     UIImage *image = [self cutImage];

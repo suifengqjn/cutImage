@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-//直接在图片上进行剪切
+@protocol XCImageCutControllerDelegate <NSObject>
 
+- (void)cutImage:(UIImage *)image;
+
+@end
+
+//直接在图片上进行剪切
 @interface XCImageCutController : UIViewController
 @property (nonatomic, strong) UIImage *currentImage;
+@property (nonatomic, assign) id <XCImageCutControllerDelegate> delegate;
+
 @end

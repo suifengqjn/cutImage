@@ -11,7 +11,7 @@
 #import "BZImageViewController.h"
 #import "FMImageCutController.h"
 #import "XCImageCutController.h"
-@interface ViewController ()<HGImageCutViewControllerDelegate,BZImageCutViewControllerDelegate>
+@interface ViewController ()<HGImageCutViewControllerDelegate,BZImageCutViewControllerDelegate,XCImageCutControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
@@ -53,6 +53,7 @@
     
     XCImageCutController *iamgeVC = [[XCImageCutController alloc] init];
     iamgeVC.currentImage = [UIImage imageNamed:@"23"];
+    iamgeVC.delegate = self;
     [self.navigationController pushViewController:iamgeVC animated:YES];
 }
 

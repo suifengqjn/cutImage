@@ -18,6 +18,7 @@
 @property (nonatomic, strong) UIView *topCover;
 @property (nonatomic, strong) UIView *bottomCover;
 @property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, strong) UIView *toolBar;
 
 @end
 
@@ -26,15 +27,57 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.hidden = YES;
     self.imageView = [[XCImageCutScrollow alloc] initWithImage:_currentImage];
     
     [self.view addSubview:self.imageView];
     
     [self buildCover];
     
+    [self buildToolBar];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"save" style:UIBarButtonItemStyleDone target:self action:@selector(ButtonClick)];
+}
+
+
+- (void)buildToolBar
+{
+    self.toolBar = [[UIView alloc] init];
+    _toolBar.backgroundColor = [UIColor blackColor];
+    _toolBar.frame = CGRectMake(0, kScreenHeight - 40, kScreenWidth, 40);
+    [self.view addSubview:_toolBar];
     
+    UIButton *cancel = [UIButton buttonWithType:UIButtonTypeSystem];
+    [cancel addTarget:self action:@selector(cancalClick) forControlEvents:UIControlEventTouchUpInside];
+    [cancel setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+    [cancel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [cancel.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    cancel.frame = CGRectMake(10, 10, 60, 20);
+    [_toolBar addSubview:cancel];
+    
+    
+    UIButton *choose = [UIButton buttonWithType:UIButtonTypeSystem];
+    [choose addTarget:self action:@selector(chooseClick) forControlEvents:UIControlEventTouchUpInside];
+    [choose setTitle:NSLocalizedString(@"Choose", nil) forState:UIControlStateNormal];
+    [choose setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [choose.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    choose.frame = CGRectMake(kScreenWidth - 70, 10, 60, 20);
+    [_toolBar addSubview:choose];
+}
+
+- (void)cancalClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)chooseClick
+{
+    UIImage *cutImage = [self cutImage];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cutImage:)]) {
+        [self.delegate cutImage:cutImage];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+    // [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)ButtonClick
